@@ -1,0 +1,31 @@
+body, html {
+    width: 300px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+#deities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* space between cards */
+}
+
+.deity-item {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* rounded corners */
+    overflow: hidden; /* keeps child elements inside the border-radius */
+}
+
+.deity-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* larger shadow on hover */
+}
+
+.deity-item img {
+    width: 100%; /* makes image take up full card width */
+    display: block;
+}
+
+.deity-item div {
+    padding: 2px 16px;
+}
